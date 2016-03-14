@@ -1,0 +1,7 @@
+name "omnichem"
+description "A simple application help you burn your eyebrows."
+copyright "Copyright © 2016, naelstrof"
+homepage "http://naelstrof.com"
+authors "naelstrof"
+dependency "vibe-d" version="~>0.7.23"
+versions "VibeDefaultMain"

@@ -1,0 +1,3063 @@
+{
+    "reagents": [
+        {
+            "id": "booster_enzyme",
+            "mix_phrase": "The solution shows signs of life, forming shapes!",
+            "name": "Booster Enzyme",
+            "required_reagents": {
+                "carbon": 1,
+                "diethylamine": 1,
+                "ethanol": 1,
+                "hydrogen": 1,
+                "oxygen": 1,
+                "strange_reagent": 1,
+                "sulfur": 1
+            },
+            "required_temperature": 274,
+            "result": "booster_enzyme",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "denatured_enzyme",
+            "mix_phrase": "The solution burns, leaving behind a lifeless mass!",
+            "name": "Denatured Enzyme",
+            "required_reagents": {
+                "booster_enzyme": 1
+            },
+            "required_temperature": 274,
+            "result": "denatured_enzyme",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "water_holy",
+            "mix_phrase": "The water somehow seems purified. Or maybe defiled.",
+            "name": "Holy Water",
+            "required_reagents": {
+                "mercury": 1,
+                "water": 1,
+                "wine": 1
+            },
+            "result": "water_holy",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "calomel",
+            "mix_phrase": "Stinging vapors rise from the solution.",
+            "name": "Calomel",
+            "required_reagents": {
+                "chlorine": 1,
+                "mercury": 1
+            },
+            "required_temperature": 274,
+            "result": "calomel",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "synthflesh",
+            "mix_phrase": "The mixture knits together into a fibrous, bloody mass.",
+            "mix_sound": "sound\/effects\/blobattack.ogg",
+            "name": "Synthetic Flesh",
+            "required_reagents": {
+                "blood": 1,
+                "carbon": 1,
+                "stypic_powder": 1
+            },
+            "result": "synthflesh",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "meat_slurry",
+            "mix_phrase": "The mixture congeals into a bloody mass.",
+            "mix_sound": "sound\/effects\/blobattack.ogg",
+            "name": "Meat Slurry",
+            "required_reagents": {
+                "blood": 1,
+                "cornstarch": 1
+            },
+            "result": "meat_slurry",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "beff",
+            "mix_phrase": "The mixture solidifies, taking a crystalline appearance.",
+            "mix_sound": "sound\/effects\/blobattack.ogg",
+            "name": "Beff",
+            "required_reagents": {
+                "badgrease": 2,
+                "meat_slurry": 1,
+                "plasma": 1
+            },
+            "result": "beff",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "enriched_msg",
+            "mix_phrase": "The mixture reduces into a fine crystalline powder and an unbelievably delicious smell wafts upwards.",
+            "name": "Enriched MSG",
+            "required_reagents": {
+                "beff": 1,
+                "cheese": 1,
+                "chickensoup": 1,
+                "ectocooler": 1,
+                "grease": 1,
+                "juice_tomato": 1,
+                "milk": 1,
+                "msg": 1,
+                "pepperoni": 1,
+                "salt": 1,
+                "sugar": 1,
+                "water_holy": 1
+            },
+            "result": "enriched_msg",
+            "result_amount": 12,
+            "type": "reagent"
+        },
+        {
+            "id": "infernite",
+            "mix_phrase": "The mixture gives off significant heat.",
+            "name": "Chlorine Triflouride",
+            "required_reagents": {
+                "chlorine": 1,
+                "fluorine": 3
+            },
+            "required_temperature": 274,
+            "result": "infernite",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "thalmerite",
+            "mix_phrase": "The resultant gel begins to emit significant heat.",
+            "name": "Pyrosium",
+            "required_reagents": {
+                "phosphorus": 1,
+                "plasma": 1,
+                "radium": 1
+            },
+            "result": "thalmerite",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "aranesp",
+            "name": "Aranesp",
+            "required_reagents": {
+                "atropine": 1,
+                "epinephrine": 1,
+                "insulin": 1
+            },
+            "result": "aranesp",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "soriumstable",
+            "mix_phrase": "The mixture pops and crackles before settling down.",
+            "name": "Stable Sorium",
+            "required_reagents": {
+                "carbon": 1,
+                "mercury": 1,
+                "nitrogen": 1,
+                "oxygen": 1,
+                "stabiliser": 1
+            },
+            "result": "sorium",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "ldmatterstable",
+            "mix_phrase": "The begins to glow in a dark purple.",
+            "name": "Stable Liquid Dark Matter",
+            "required_reagents": {
+                "carbon": 1,
+                "plasma": 1,
+                "radium": 1,
+                "stabiliser": 1
+            },
+            "result": "ldmatter",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "sorium",
+            "inhibitors": "list(\"stabiliser\")",
+            "instant": 1,
+            "mix_phrase": "The mixture explodes with a big bang.",
+            "name": "Sorium",
+            "required_reagents": {
+                "carbon": 1,
+                "mercury": 1,
+                "nitrogen": 1,
+                "oxygen": 1
+            },
+            "type": "reagent"
+        },
+        {
+            "id": "ldmatter",
+            "inhibitors": "list(\"stabiliser\")",
+            "instant": 1,
+            "mix_phrase": "The mixture implodes suddenly.",
+            "name": "Liquid Dark Matter",
+            "required_reagents": {
+                "carbon": 1,
+                "plasma": 1,
+                "radium": 1
+            },
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "bilk",
+            "mix_phrase": "The mixture turns an offensive brown colour and begins fizzing.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Bilk",
+            "required_reagents": {
+                "beer": 1,
+                "milk": 1
+            },
+            "result": "bilk",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "chocolate milk",
+            "mix_phrase": "The mixture turns a nice brown color.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Chocolate Milk",
+            "required_reagents": {
+                "chocolate": 1,
+                "milk": 1
+            },
+            "result": "chocolate_milk",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "strawberry milk",
+            "mix_phrase": "The mixture turns a nice pink color.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Strawberry Milk",
+            "required_reagents": {
+                "juice_strawberry": 1,
+                "milk": 1
+            },
+            "result": "strawberry_milk",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "lipolicide",
+            "mix_phrase": "A vague smell similar to tofu rises from the mixture.",
+            "name": "Lipolicide",
+            "result": "lipolicide",
+            "required_reagents": {
+                "ephedrine": 1,
+                "diethylamine": 1,
+                "mercury": 1
+            },
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "cheese",
+            "mix_phrase": "The mixture curdles up.",
+            "name": "Cheese",
+            "required_reagents": {
+                "milk": 1,
+                "vomit": 1
+            },
+            "result": "cheese",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "gcheese",
+            "mix_phrase": "The disgusting mixture sloughs together horribly, emitting a foul stench.",
+            "mix_sound": "sound\/misc\/diarrhea.ogg",
+            "name": "Weird Cheese",
+            "required_reagents": {
+                "gvomit": 1,
+                "milk": 1
+            },
+            "result": "gcheese",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "lemonade",
+            "mix_phrase": "The sugar dissolves into the lemon juice.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Lemonade",
+            "required_reagents": {
+                "juice_lemon": 3,
+                "sugar": 1
+            },
+            "result": "lemonade",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "halfandhalf",
+            "mix_phrase": "The tea and lemonade combine without much fuss.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Half and Half",
+            "required_reagents": {
+                "lemonade": 1,
+                "tea": 1
+            },
+            "result": "halfandhalf",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "name": "Half and Half",
+            "id": "halfandhalf2",
+            "required_reagents": {
+                "juice_lemon": 1,
+                "sweet_tea": 1
+            },
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "name": "Half and Half",
+            "id": "halfandhalf3",
+            "required_reagents": {
+                "lemonade": 1,
+                "sweet_tea": 1
+            },
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "eggnog",
+            "mix_phrase": "The eggs nog together. Pretend that \\\"nog\\\" is a verb.",
+            "name": "Eggnog",
+            "required_reagents": {
+                "egg": 1,
+                "milk": 1,
+                "sugar": 1
+            },
+            "result": "eggnog",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "sweet_tea",
+            "mix_phrase": "The tea sweetens. Visually. Somehow.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Sweet Tea",
+            "required_reagents": {
+                "sugar": 1,
+                "tea": 1
+            },
+            "result": "sweet_tea",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "honey_tea",
+            "mix_phrase": "The tea somehow smells even nicer than before.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Tea",
+            "required_reagents": {
+                "honey": 1,
+                "tea": 1
+            },
+            "result": "honey_tea",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "cocktail_citrus",
+            "mix_phrase": "The citrus juices begin to blend together.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Triple Citrus",
+            "required_reagents": {
+                "juice_lemon": 1,
+                "juice_lime": 1,
+                "juice_orange": 1
+            },
+            "result": "cocktail_citrus",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "beach",
+            "mix_phrase": "You die a little inside after making that.",
+            "mix_sound": "sound\/misc\/poo2.ogg",
+            "name": "Sex on the Beach",
+            "required_reagents": {
+                "juice_cran": 1,
+                "juice_orange": 1,
+                "vodka": 1
+            },
+            "result": "beach",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "beach2",
+            "name": "Sex on the Beach",
+            "required_reagents": {
+                "juice_cran": 1,
+                "screwdriver": 2
+            },
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "screwdriver",
+            "mix_phrase": "The vodka and orange juice mix together nicely.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Screwdriver",
+            "required_reagents": {
+                "juice_orange": 1,
+                "vodka": 1
+            },
+            "result": "screwdriver",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "bloody_mary",
+            "mix_phrase": "The vodka and tomato juice mix together nicely.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Bloody Mary",
+            "required_reagents": {
+                "juice_tomato": 1,
+                "vodka": 1
+            },
+            "result": "bloody_mary",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "bloody_scary",
+            "mix_phrase": "The blood feverishly tries to escape the burn of the vodka, but eventually succumbs.",
+            "mix_sound": "sound\/effects\/fleshbr1.ogg",
+            "name": "Bloody Scary",
+            "required_reagents": {
+                "bloodc": 1,
+                "vodka": 1
+            },
+            "result": "bloody_scary",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "suicider",
+            "mix_phrase": "The drinks and chemicals mix together, emitting a potent smell.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Suicider",
+            "required_reagents": {
+                "cider": 1,
+                "epinephrine": 1,
+                "fuel": 1,
+                "vodka": 1
+            },
+            "result": "suicider",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "boorbon",
+            "mix_phrase": "The bourbon and ectoplasm mix together, forming a HORRIFYING BLEND.",
+            "mix_sound": "sound\/effects\/ghostlaugh.ogg",
+            "name": "BOOrbon",
+            "required_reagents": {
+                "bourbon": 1,
+                "ectoplasm": 1
+            },
+            "result": "boorbon",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "grog",
+            "mix_phrase": "The substance mixes together, emitting a rank piratey odor and seemingly dissolving some of the container...",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Grog",
+            "required_reagents": {
+                "acetone": 1,
+                "acid": 1,
+                "cleaner": 1,
+                "fuel": 1,
+                "gvomit": 1,
+                "juice_tomato": 1,
+                "lube": 1,
+                "pacid": 1,
+                "pepperoni": 1,
+                "rum": 1,
+                "sugar": 1
+            },
+            "result": "grog",
+            "result_amount": 10,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "beepskybeer",
+            "mix_phrase": "The beer is filled briefly by thousands of brilliant, tiny electrical arcs before growing calm and dark.",
+            "mix_sound": "sound\/effects\/sparks6.ogg",
+            "name": "Beepskybräu Security Schwarzbier",
+            "required_reagents": {
+                "beer": 1,
+                "nanites": 1
+            },
+            "result": "beepskybeer",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "whiskey_sour",
+            "mix_phrase": "The alcohol burn sneakily disguises itself in the sweet and sour mix.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Whiskey Sour",
+            "required_reagents": {
+                "bourbon": 1,
+                "juice_lemon": 1,
+                "sugar": 1
+            },
+            "result": "whiskey_sour",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "whiskey_sour2",
+            "name": "Whiskey Sour",
+            "required_reagents": {
+                "bourbon": 1,
+                "lemonade": 2
+            },
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "daiquiri",
+            "mix_phrase": "The rum pairs nicely with the sugar and lime.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Daiquiri",
+            "required_reagents": {
+                "juice_lime": 1,
+                "rum": 1,
+                "sugar": 1
+            },
+            "result": "daiquiri",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "martini",
+            "mix_phrase": "James Bond would be proud.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Martini",
+            "required_reagents": {
+                "gin": 1,
+                "vermouth": 1
+            },
+            "result": "martini",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "v_martini",
+            "mix_phrase": "James Bond would be ashamed.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Vodka Martini",
+            "required_reagents": {
+                "vermouth": 1,
+                "vodka": 1
+            },
+            "result": "v_martini",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "manhattan",
+            "mix_phrase": "The unmistakable smell of a power lunch wafts from the container.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Manhattan",
+            "required_reagents": {
+                "bitters": 1,
+                "bourbon": 1,
+                "vermouth": 1
+            },
+            "result": "manhattan",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "libre",
+            "mix_phrase": "You shed a single patriotic tear as the drink comes together.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Space-Cuba Libre",
+            "required_reagents": {
+                "cola": 1,
+                "juice_lime": 1,
+                "rum": 1
+            },
+            "result": "libre",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "ginfizz",
+            "mix_phrase": "The mixed drink starts fizzing on its own. Somehow.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Gin Fizz",
+            "required_reagents": {
+                "gin": 1,
+                "juice_lemon": 1,
+                "water": 1
+            },
+            "result": "ginfizz",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "gimlet",
+            "mix_phrase": "The gin attempts to hide its pine cone flavor in the lime juice.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Gimlet",
+            "required_reagents": {
+                "gin": 1,
+                "juice_lime": 1
+            },
+            "result": "gimlet",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "cosmo",
+            "mix_phrase": "The drink turns a bright pink.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Cosmopolitan",
+            "required_reagents": {
+                "juice_cran": 1,
+                "juice_lime": 1,
+                "vodka": 1
+            },
+            "result": "cosmo",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "name": "Cosmopolitan",
+            "id": "cosmo2",
+            "required_reagents": {
+                "juice_cran": 1,
+                "v_gimlet": 2
+            },
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "v_gimlet",
+            "mix_phrase": "The drink comes together and swiftly infuriates cocktail nerds.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Vodka Gimlet",
+            "required_reagents": {
+                "juice_lime": 1,
+                "vodka": 1
+            },
+            "result": "v_gimlet",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "b_russian",
+            "mix_phrase": "The drink turns a deep brown as the coffee settles in.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Black Russian",
+            "required_reagents": {
+                "coffee": 1,
+                "vodka": 1
+            },
+            "result": "b_russian",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "w_russian",
+            "mix_phrase": "The drink abides.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "White Russian",
+            "required_reagents": {
+                "coffee": 1,
+                "milk": 1,
+                "vodka": 1
+            },
+            "result": "w_russian",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "name": "White Russian",
+            "id": "w_russian2",
+            "required_reagents": {
+                "b_russian": 2,
+                "milk": 1
+            },
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "irishcoffee",
+            "mix_phrase": "The drink turns a rich brown and smells like a hangover.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Irish Coffee",
+            "required_reagents": {
+                "bourbon": 1,
+                "coffee": 1,
+                "milk": 1,
+                "sugar": 1
+            },
+            "result": "irishcoffee",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "dbreath",
+            "mix_phrase": "A tiny mushroom cloud erupts from the container. That\"s not worrying at all!",
+            "mix_sound": "sound\/misc\/meteorimpact.ogg",
+            "name": "Dragon\"s Breath",
+            "required_reagents": {
+                "bourbon": 1,
+                "fuel": 1,
+                "napalm": 1,
+                "thalmerite": 1
+            },
+            "result": "dbreath",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "gtonic",
+            "mix_phrase": "The tonic water and gin mix together perfectly.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Gin and Tonic",
+            "required_reagents": {
+                "gin": 1,
+                "tonic": 1
+            },
+            "result": "gtonic",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "vtonic",
+            "mix_phrase": "The tonic water and vodka mix together perfectly.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Vodka Tonic",
+            "required_reagents": {
+                "tonic": 1,
+                "vodka": 1
+            },
+            "result": "vtonic",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "sonic",
+            "mix_phrase": "The drink turns electric blue and starts quivering violently.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Gin and Sonic",
+            "required_reagents": {
+                "gtonic": 1,
+                "methamphetamine": 1
+            },
+            "result": "sonic",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "gpink",
+            "mix_phrase": "The gin and tonic gets even more bitter. Way to go!",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Pink Gin and Tonic",
+            "required_reagents": {
+                "bitters": 1,
+                "gtonic": 1
+            },
+            "result": "gpink",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "eraser",
+            "mix_phrase": "The coffee, tonic, and vodka separate into dangerously drinkable layers.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Mind Eraser",
+            "required_reagents": {
+                "coffee": 1,
+                "vtonic": 1
+            },
+            "result": "eraser",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "madmen",
+            "mix_phrase": "The cocktail gets back to basics.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Old Fashioned",
+            "required_reagents": {
+                "bitters": 1,
+                "bourbon": 1,
+                "sugar": 1,
+                "water": 1
+            },
+            "result": "madmen",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "planter",
+            "mix_phrase": "A nicely Jamaican smell wafts out of the container.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Planter's Punch",
+            "required_reagents": {
+                "lemonade": 1,
+                "rum": 1
+            },
+            "result": "planter",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "maitai",
+            "mix_phrase": "A little pink umbrella magically appears in the drink.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Mai Tai",
+            "required_reagents": {
+                "juice_lime": 1,
+                "juice_orange": 1,
+                "rum": 1
+            },
+            "result": "maitai",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "harlow",
+            "mix_phrase": "The ghosts of starlets past waft by.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Jean Harlow",
+            "required_reagents": {
+                "rum": 1,
+                "vermouth": 1
+            },
+            "result": "harlow",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "gchronic",
+            "mix_phrase": "Dude. Dude. You\"re, like, a genius.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Gin and Chronic",
+            "required_reagents": {
+                "THC": 1,
+                "gtonic": 1
+            },
+            "result": "gchronic",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "margarita",
+            "mix_phrase": "The tequila and citrus pair together like old, alcoholic friends.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Margarita",
+            "required_reagents": {
+                "juice_lime": 1,
+                "juice_orange": 1,
+                "tequila": 1
+            },
+            "result": "margarita",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "tequini",
+            "mix_phrase": "James Bond would be deeply confused.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Tequini",
+            "required_reagents": {
+                "tequila": 1,
+                "vermouth": 1
+            },
+            "result": "tequini",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "pfire",
+            "mix_phrase": "The hot sauce and tequila mix to create a frat boy\"s worst nightmare.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Prairie Fire",
+            "required_reagents": {
+                "capsaicin": 1,
+                "tequila": 1
+            },
+            "result": "pfire",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "bull",
+            "mix_phrase": "The coffee and tequila mix together. Liqueur? Who needs it?",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Brave Bull",
+            "required_reagents": {
+                "coffee": 1,
+                "tequila": 1
+            },
+            "result": "bull",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "longisland",
+            "mix_phrase": "The frightening amount of liquor in the container balances out with the cola and sours.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Long Island Iced Tea",
+            "required_reagents": {
+                "cola": 1,
+                "gin": 1,
+                "juice_lemon": 1,
+                "rum": 1,
+                "screwdriver": 1,
+                "tequila": 1
+            },
+            "result": "longisland",
+            "result_amount": 6,
+            "type": "reagent"
+        },
+        {
+            "id": "longbeach",
+            "mix_phrase": "The frightening amount of liquor in the container balances out with the lemon juice and sours.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Long Beach Iced Tea",
+            "required_reagents": {
+                "beach": 1,
+                "gin": 1,
+                "juice_lemon": 1,
+                "rum": 1,
+                "tequila": 1
+            },
+            "result": "longbeach",
+            "result_amount": 5,
+            "type": "reagent"
+        },
+        {
+            "id": "hunchback",
+            "mix_phrase": "The chunks of tomato paste hang in the bourbon and cola as an emulsion. It looks as horrible as that sounds.",
+            "mix_sound": "sound\/effects\/blobattack.ogg",
+            "name": "Hunchback",
+            "required_reagents": {
+                "bourbon": 1,
+                "cola": 1,
+                "juice_tomato": 1
+            },
+            "result": "hunchback",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "pinacolada",
+            "mix_phrase": "The drink gives off the smell of a rainy beach.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Piña Colada",
+            "required_reagents": {
+                "coconut_milk": 1,
+                "juice_pineapple": 1,
+                "rum": 1
+            },
+            "result": "pinacolada",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "mimosa",
+            "mix_phrase": "The drink fizzes as the pulp settles to the top.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Mimosa",
+            "required_reagents": {
+                "champagne": 1,
+                "juice_orange": 1
+            },
+            "result": "mimosa",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "french75",
+            "mix_phrase": "The drink fizzes and turns a dark gold.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "French 75",
+            "required_reagents": {
+                "champagne": 1,
+                "gin": 1,
+                "lemonade": 1
+            },
+            "result": "french75",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "negroni",
+            "mix_phrase": "The drink turns a deep red and gives off a hit of sweetness.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Negroni",
+            "required_reagents": {
+                "bitters": 1,
+                "gin": 1,
+                "vermouth": 1
+            },
+            "result": "negroni",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "name": "Negroni",
+            "id": "negroni2",
+            "required_reagents": {
+                "bitters": 1,
+                "martini": 2
+            },
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "necroni",
+            "mix_phrase": "The drink gives off a haunting stench! What did you make?",
+            "mix_sound": "sound\/effects\/ghostbreath.ogg",
+            "name": "Necroni",
+            "required_reagents": {
+                "bitters": 1,
+                "ectoplasm": 1,
+                "gin": 1,
+                "vermouth": 1
+            },
+            "result": "necroni",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "name": "Necroni",
+            "id": "necroni2",
+            "required_reagents": {
+                "ectoplasm": 1,
+                "negroni": 2
+            },
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "squeeze",
+            "mix_phrase": "The fuel is filtered through the bread and makes something vaguely consumable.",
+            "name": "Squeeze",
+            "required_reagents": {
+                "bread": 3,
+                "fuel": 2
+            },
+            "result": "squeeze",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "antihol",
+            "mix_phrase": "A minty and refreshing smell drifts from the effervescent mixture.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Antihol",
+            "required_reagents": {
+                "charcoal": 1,
+                "ethanol": 1
+            },
+            "result": "antihol",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "ectocooler",
+            "mix_phrase": "The orange juice turns an unsettlingly vibrant shade of green.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Ecto Cooler",
+            "required_reagents": {
+                "ectoplasm": 1,
+                "juice_orange": 1,
+                "uranium": 1
+            },
+            "result": "ectocooler",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "explosion_potassium",
+            "instant": 1,
+            "mix_phrase": "The mixture explodes!",
+            "name": "Potassium Explosion",
+            "required_reagents": {
+                "potassium": 1,
+                "water": 1
+            },
+            "type": "reagent"
+        },
+        {
+            "id": "explosion_barium",
+            "instant": 1,
+            "mix_phrase": "The mixture explodes!",
+            "name": "Barium Explosion",
+            "required_reagents": {
+                "barium": 1,
+                "water": 1
+            },
+            "type": "reagent"
+        },
+        {
+            "id": "explosion_magnesium",
+            "instant": 1,
+            "mix_phrase": "The mixture explodes!",
+            "name": "Magnesium Explosion",
+            "required_reagents": {
+                "copper": 1,
+                "magnesium": 1,
+                "oxygen": 1
+            },
+            "type": "reagent"
+        },
+        {
+            "id": "magnesium_chloride",
+            "mix_phrase": "The mixture settles into a white powder.",
+            "name": "Magnesium Chloride",
+            "required_reagents": {
+                "clacid": 2,
+                "magnesium": 1
+            },
+            "result": "magnesium_chloride",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "mg_nh3_cl",
+            "name": "Magnesium-Ammonium Chloride",
+            "required_reagents": {
+                "ammonia": 6,
+                "magnesium_chloride": 1
+            },
+            "required_temperature": -313,
+            "result": "magnesium_chloride",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "mg_nh3_cl_breakdown",
+            "name": "Magnesium Chloride (+ Ammonia)",
+            "required_reagents": {
+                "mg_nh3_cl": 1
+            },
+            "required_temperature": 274,
+            "result": "magnesium_chloride",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "silicate",
+            "mix_phrase": "The substance mixes into a clear, viscous liquid.",
+            "name": "Silicate",
+            "required_reagents": {
+                "aluminium": 1,
+                "oxygen": 1,
+                "silicon": 1
+            },
+            "result": "silicate",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "oil",
+            "mix_phrase": "An iridescent black chemical forms in the container.",
+            "name": "Oil",
+            "required_reagents": {
+                "carbon": 1,
+                "fuel": 1,
+                "hydrogen": 1
+            },
+            "result": "oil",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "mutagen",
+            "mix_phrase": "The substance turns neon green and bubbles unnervingly.",
+            "name": "Unstable mutagen",
+            "required_reagents": {
+                "chlorine": 1,
+                "plasma": 1,
+                "radium": 1
+            },
+            "result": "mutagen",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "dna_mutagen",
+            "mix_phrase": "The substance turns a drab green and begins to bubble.",
+            "name": "Stable mutagen",
+            "required_reagents": {
+                "acetone": 1,
+                "bromine": 1,
+                "lithium": 1,
+                "mutagen": 1
+            },
+            "result": "dna_mutagen",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "name": "Stable mutagen",
+            "id": "dna_mutagen2",
+            "required_reagents": {
+                "lithium": 1,
+                "mutadone": 3
+            },
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "cyanide",
+            "mix_phrase": "The mixture gives off a faint scent of almonds.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Cyanide",
+            "required_reagents": {
+                "ammonia": 1,
+                "oil": 1,
+                "oxygen": 1
+            },
+            "required_temperature": 274,
+            "result": "cyanide",
+            "result_amount": 1 ,
+            "type": "reagent"
+        },
+        {
+            "id": "sarin",
+            "mix_phrase": "The mixture yields a colorless, odorless liquid.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Sarin",
+            "required_reagents": {
+                "acetone": 1,
+                "chlorine": 1,
+                "fluorine": 1,
+                "fuel": 1,
+                "hydrogen": 1,
+                "oxygen": 1,
+                "phosphorus": 1,
+                "weedkiller": 1
+            },
+            "required_temperature": 274,
+            "result": "sarin",
+            "result_amount": 3 ,
+            "type": "reagent"
+        },
+        {
+            "id": "phenol",
+            "mix_phrase": "The mixture bubbles and gives off an unpleasant medicinal odor.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Phenol",
+            "required_reagents": {
+                "chlorine": 1,
+                "oil": 1,
+                "water": 1
+            },
+            "result": "phenol",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "salicylic_acid",
+            "mix_phrase": "The mixture crystallizes.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Salicylic Acid",
+            "required_reagents": {
+                "acid": 1,
+                "carbon": 1,
+                "oxygen": 1,
+                "phenol": 1,
+                "sodium": 1
+            },
+            "result": "salicylic_acid",
+            "result_amount": 5,
+            "type": "reagent"
+        },
+        {
+            "id": "thermite",
+            "mix_phrase": "The solution mixes into a reddish-brown powder.",
+            "name": "Thermite",
+            "required_reagents": {
+                "aluminium": 1,
+                "iron": 1,
+                "oxygen": 1
+            },
+            "result": "thermite",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "space_drugs",
+            "mix_phrase": "Slightly dizzying fumes drift from the solution.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Space Drugs",
+            "required_reagents": {
+                "lithium": 1,
+                "mercury": 1,
+                "sugar": 1
+            },
+            "result": "space_drugs",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "lube",
+            "mix_phrase": "The substance turns a striking cyan and becomes oily.",
+            "name": "Space Lube",
+            "required_reagents": {
+                "oxygen": 1,
+                "silicon": 1,
+                "water": 1
+            },
+            "result": "lube",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "acid",
+            "mix_phrase": "The mixture gives off a sharp acidic tang.",
+            "name": "Sulfuric Acid",
+            "required_reagents": {
+                "hydrogen": 1,
+                "oxygen": 1,
+                "sulfur": 1
+            },
+            "result": "acid",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "clacid",
+            "mix_phrase": "The mixture gives off a sharp acidic tang.",
+            "name": "Hydrochloric Acid",
+            "required_reagents": {
+                "chlorine": 1,
+                "hydrogen": 1,
+                "water": 1
+            },
+            "result": "clacid",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "pacid",
+            "mix_phrase": "The mixture deepens to a dark blue, and slowly begins to corrode its container.",
+            "name": "Fluorosulfuric Acid",
+            "required_reagents": {
+                "acid": 1,
+                "fluorine": 1,
+                "hydrogen": 1,
+                "potassium": 1
+            },
+            "required_temperature": 274,
+            "result": "pacid",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "anti_rad",
+            "mix_phrase": "The solution settles calmly and emits gentle fumes.",
+            "name": "Potassium Iodide",
+            "required_reagents": {
+                "iodine": 1,
+                "potassium": 1
+            },
+            "result": "anti_rad",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "penteticacid",
+            "mix_phrase": "The substance becomes very still, emitting a curious haze.",
+            "name": "Pentetic Acid",
+            "required_reagents": {
+                "ammonia": 1,
+                "chlorine": 1,
+                "cyanide": 1,
+                "formaldehyde": 1,
+                "fuel": 1,
+                "sodium": 1
+            },
+            "result": "penteticacid",
+            "result_amount": 6,
+            "type": "reagent"
+        },
+        {
+            "id": "acetaldehyde",
+            "mix_phrase": "It smells like a bad hangover in here.",
+            "name": "Acetaldehyde",
+            "required_reagents": {
+                "chromium": 1,
+                "copper": 1,
+                "ethanol": 1,
+                "oxygen": 1
+            },
+            "required_temperature": 275,
+            "result": "acetaldehyde",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "acetic_acid",
+            "mix_phrase": "It smells like vinegar and a bad hangover in here.",
+            "name": "Acetic Acid",
+            "required_reagents": {
+                "acetaldehyde": 1,
+                "nitrogen": 4,
+                "oxygen": 1
+            },
+            "result": "acetic_acid",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "ether",
+            "max_temperature": 423,
+            "mix_phrase": "The mixture yields a pungent odor, which makes you tired.",
+            "name": "Ether",
+            "required_reagents": {
+                "clacid": 1,
+                "ethanol": 1,
+                "oxygen": 1
+            },
+            "result": "ether",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "cyclopentanol",
+            "mix_phrase": "The mixture fizzles into a colorless liquid.",
+            "name": "Cyclopentanol",
+            "required_reagents": {
+                "acetic_acid": 1,
+                "barium": 1,
+                "ether": 1,
+                "hydrogen": 1,
+                "oxygen": 1
+            },
+            "required_temperature": 275,
+            "result": "cyclopentanol",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "kerosene",
+            "mix_phrase": "This pungent odor could probably melt steel.",
+            "name": "Kerosene",
+            "required_reagents": {
+                "acetone": 1,
+                "aluminium": 1,
+                "cyclopentanol": 1,
+                "hydrogen": 1,
+                "nickel": 1,
+                "oxygen": 3
+            },
+            "required_temperature": 279,
+            "result": "kerosene",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "formaldehyde",
+            "mix_phrase": "Ugh, it smells like the morgue in here.",
+            "name": "Embalming fluid",
+            "required_reagents": {
+                "ethanol": 1,
+                "oxygen": 1,
+                "silver": 1
+            },
+            "required_temperature": 274,
+            "result": "formaldehyde",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "haloperidol",
+            "mix_phrase": "The chemicals mix into an odd pink slush.",
+            "name": "Haloperidol",
+            "required_reagents": {
+                "aluminium": 1,
+                "anti_rad": 1,
+                "chlorine": 1,
+                "fluorine": 1,
+                "oil": 1
+            },
+            "result": "haloperidol",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "silver_sulfadiazine",
+            "mix_phrase": "A strong and cloying odor begins to bubble from the mixture.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Burn Medication",
+            "required_reagents": {
+                "ammonia": 1,
+                "chlorine": 1,
+                "oxygen": 1,
+                "silver": 1,
+                "sulfur": 1
+            },
+            "result": "silver_sulfadiazine",
+            "result_amount": 5,
+            "type": "reagent"
+        },
+        {
+            "id": "charcoal",
+            "mix_phrase": "The mixture yields a fine black powder.",
+            "mix_sound": "sound\/misc\/fuse.ogg",
+            "name": "Activated Charcoal",
+            "required_reagents": {
+                "ash": 1,
+                "salt": 1
+            },
+            "required_temperature": 274,
+            "result": "charcoal",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "teporone",
+            "mix_phrase": "The mixture turns an odd lavender color.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Teporone",
+            "required_reagents": {
+                "acetone": 1,
+                "plasma": 1,
+                "silicon": 1
+            },
+            "result": "teporone",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "epinephrine",
+            "mix_phrase": "Tiny white crystals precipitate out of the solution.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Epinephrine",
+            "required_reagents": {
+                "acetone": 1,
+                "chlorine": 1,
+                "diethylamine": 1,
+                "hydrogen": 1,
+                "oxygen": 1,
+                "phenol": 1
+            },
+            "result": "epinephrine",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "atropine",
+            "mix_phrase": "A horrid smell like something died drifts from the mixture.",
+            "name": "Atropine",
+            "required_reagents": {
+                "acetone": 1,
+                "acid": 1,
+                "diethylamine": 1,
+                "ethanol": 1,
+                "phenol": 1
+            },
+            "result": "atropine",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "oculine",
+            "mix_phrase": "The mixture settles, becoming a milky white.",
+            "name": "Oculine",
+            "required_reagents": {
+                "atropine": 1,
+                "saline": 1,
+                "spaceacillin": 1
+            },
+            "result": "oculine",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "mannitol",
+            "mix_phrase": "The mixture bubbles slowly, making a slightly sweet odor.",
+            "name": "Mannitol",
+            "required_reagents": {
+                "hydrogen": 1,
+                "sugar": 1,
+                "water": 1
+            },
+            "result": "mannitol",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "salbutamol",
+            "mix_phrase": "The solution bubbles freely, creating a head of bluish foam.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Salbutamol",
+            "required_reagents": {
+                "aluminium": 1,
+                "ammonia": 1,
+                "bromine": 1,
+                "lithium": 1,
+                "salicylic_acid": 1
+            },
+            "result": "salbutamol",
+            "result_amount": 5,
+            "type": "reagent"
+        },
+        {
+            "id": "perfluorodecalin",
+            "mix_phrase": "The mixture rapidly turns into a dense pink liquid.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Perfluorodecalin",
+            "required_reagents": {
+                "fluorine": 1,
+                "hydrogen": 1,
+                "oil": 1
+            },
+            "required_temperature": 274,
+            "result": "perfluorodecalin",
+            "result_amount": 2 ,
+            "type": "reagent"
+        },
+        {
+            "id": "stypic_powder",
+            "mix_phrase": "The solution yields an astringent powder.",
+            "name": "Styptic Powder",
+            "required_reagents": {
+                "acid": 1,
+                "aluminium": 1,
+                "hydrogen": 1,
+                "oxygen": 1
+            },
+            "result": "stypic_powder",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "ephedrine",
+            "mix_phrase": "The solution fizzes and gives off toxic fumes.",
+            "name": "Ephedrine",
+            "required_reagents": {
+                "diethylamine": 1,
+                "hydrogen": 1,
+                "oil": 1,
+                "sugar": 1
+            },
+            "result": "ephedrine",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "methamphetamine",
+            "mix_phrase": "The solution fizzes and gives off toxic fumes.",
+            "name": "Methamphetamine",
+            "required_reagents": {
+                "ephedrine": 1,
+                "hydrogen": 1,
+                "iodine": 1,
+                "phosphorus": 1
+            },
+            "required_temperature": 274,
+            "result": "methamphetamine",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "mutadone",
+            "mix_phrase": "A foul astringent liquid emerges from the reaction.",
+            "name": "Mutadone",
+            "required_reagents": {
+                "acetone": 1,
+                "bromine": 1,
+                "mutagen": 1
+            },
+            "result": "mutadone",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "cryoxadone",
+            "mix_phrase": "The solution bubbles softly.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Cryoxadone",
+            "required_reagents": {
+                "acetone": 1,
+                "cryostylane": 1,
+                "mutagen": 1,
+                "plasma": 1
+            },
+            "result": "cryoxadone",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "cryostylane",
+            "mix_phrase": "A light layer of frost forms on top of the mixture.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Cryostylane",
+            "required_reagents": {
+                "nitrogen": 1,
+                "plasma": 1,
+                "water": 1
+            },
+            "result": "cryostylane",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "spaceacillin",
+            "mix_phrase": "The solvent extracts an antibiotic compound from the fungus.",
+            "name": "spaceacillin",
+            "required_reagents": {
+                "ethanol": 1,
+                "space_fungus": 1
+            },
+            "result": "spaceacillin",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "mutagen2",
+            "mix_phrase": "An unpleasant, shifting green mass of liquid forms from the reaction.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Strange Toxin",
+            "required_reagents": {
+                "epinephrine": 1,
+                "neurotoxin": 1
+            },
+            "result": "mutagen",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "initropidril",
+            "mix_phrase": "A sweet and sugary scent drifts from the unpleasant milky substance.",
+            "name": "initropidril",
+            "required_reagents": {
+                "atropine": 1,
+                "bathsalts": 1,
+                "crank": 1,
+                "histamine": 1,
+                "krokodil": 1,
+                "morphine": 1,
+                "nicotine": 1
+            },
+            "result": "initropidril",
+            "result_amount": 4 ,
+            "type": "reagent"
+        },
+        {
+            "id": "royal_initrobeedril",
+            "mix_phrase": "A sweet and sugary scent drifts from the royal purple substance.",
+            "name": "royal initrobeedril",
+            "required_reagents": {
+                "bee": 1,
+                "dna_mutagen": 1,
+                "honey": 1,
+                "initropidril": 1,
+                "royal_jelly": 1
+            },
+            "required_temperature": 275,
+            "result": "royal_initrobeedril",
+            "result_amount": 5,
+            "type": "reagent"
+        },
+        {
+            "id": "initrobeedril",
+            "mix_phrase": "A sweet and sugary scent drifts from the golden substance.",
+            "name": "initrobeedril",
+            "required_reagents": {
+                "bee": 1,
+                "dna_mutagen": 1,
+                "honey": 1,
+                "initropidril": 1
+            },
+            "result": "initrobeedril",
+            "result_amount": 5,
+            "type": "reagent"
+        },
+        {
+            "id": "fake_initropidril",
+            "mix_phrase": "A sweet and sugary scent drifts from the unpleasant milky substance.",
+            "name": "initropidril",
+            "required_reagents": {
+                "formaldehyde": 1,
+                "methamphetamine": 1,
+                "neurotoxin": 1,
+                "pacid": 1,
+                "water_holy": 1
+            },
+            "result": "fake_initropidril",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "drinkrecipe": 1,
+            "id": "cola",
+            "mix_phrase": "The mixture begins to fizz.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "cola",
+            "required_reagents": {
+                "carbon": 1,
+                "oxygen": 1,
+                "sugar": 1,
+                "water": 1
+            },
+            "result": "cola",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "anti_fart",
+            "name": "Simethicone",
+            "required_reagents": {
+                "chlorine": 1,
+                "hydrogen": 1,
+                "oxygen": 1,
+                "silicon": 1
+            },
+            "result": "anti_fart",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "flashpowder",
+            "mix_phrase": "The chemicals hiss and fizz briefly before falling still.",
+            "name": "Flash Powder",
+            "required_reagents": {
+                "aluminium": 1,
+                "chlorine": 1,
+                "potassium": 1,
+                "stabiliser": 1,
+                "sulfur": 1
+            },
+            "result": "flashpowder",
+            "result_amount": 5,
+            "type": "reagent"
+        },
+        {
+            "id": "flash",
+            "inhibitors": "list(\"stabiliser\")",
+            "instant": 1,
+            "mix_phrase": "The chemicals catch fire, burning brightly and violently!",
+            "mix_sound": "sound\/weapons\/flashbang.ogg",
+            "name": "Flash",
+            "required_reagents": {
+                "aluminium": 1,
+                "chlorine": 1,
+                "potassium": 1,
+                "sulfur": 1
+            },
+            "type": "reagent"
+        },
+        {
+            "id": "sonicpowder",
+            "mix_phrase": "The mixture begins to bubble slighly!",
+            "name": "Hootingium",
+            "required_reagents": {
+                "cola": 1,
+                "oxygen": 1,
+                "phosphorus": 1,
+                "stabiliser": 1
+            },
+            "result": "sonicpowder",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "sonic_boom",
+            "inhibitors": "list(\"stabiliser\")",
+            "instant": 1,
+            "mix_phrase": "The mixture begins to bubble furiously!",
+            "mix_sound": "sound\/weapons\/flashbang.ogg",
+            "name": "Hootingium",
+            "required_reagents": {
+                "cola": 1,
+                "oxygen": 1,
+                "phosphorus": 1
+            },
+            "type": "reagent"
+        },
+        {
+            "id": "chlorine_azide",
+            "instant": 1,
+            "mix_phrase": "The substance violently detonates!",
+            "mix_sound": "sound\/effects\/bang.ogg",
+            "name": "Chlorine Azide",
+            "required_reagents": {
+                "ammonia": 1,
+                "chlorine": 1,
+                "nitrogen": 1,
+                "oxygen": 1,
+                "silver": 1,
+                "sodium": 1
+            },
+            "result": "chlorine_azide",
+            "type": "reagent"
+        },
+        {
+            "id": "clf3_firefoam",
+            "instant": 1,
+            "mix_phrase": "The substance violently detonates!",
+            "mix_sound": "sound\/effects\/bang.ogg",
+            "name": "CLF3 + FF Explosion",
+            "required_reagents": {
+                "ff-foam": 1,
+                "infernite": 1
+            },
+            "result": "clf3_firefoam",
+            "type": "reagent"
+        },
+        {
+            "id": "anima",
+            "instant": 1,
+            "mix_phrase": "null",
+            "mix_sound": "sound\/effects\/ghostbreath.ogg",
+            "name": "Anima",
+            "required_reagents": {
+                "blood": 1,
+                "ectoplasm": 1,
+                "ldmatter": 1,
+                "strange_reagent": 1
+            },
+            "type": "reagent"
+        },
+        {
+            "id": "napalm",
+            "mix_phrase": "The substance becomes sticky and extremely warm.",
+            "name": "Phlogiston",
+            "required_reagents": {
+                "acid": 1,
+                "phosphorus": 1,
+                "plasma": 1,
+                "stabiliser": 1
+            },
+            "result": "napalm",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "firedust",
+            "mix_phrase": "The substance becomes a pile of burning dust.",
+            "name": "Phlogiston Dust",
+            "required_reagents": {
+                "charcoal": 1,
+                "napalm": 1,
+                "phosphorus": 1,
+                "sulfur": 1
+            },
+            "result": "firedust",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "napalm",
+            "inhibitors": "list(\"stabiliser\")",
+            "instant": 1,
+            "mix_phrase": "The substance erupts into wild flames.",
+            "name": "Phlogiston Fire",
+            "required_reagents": {
+                "acid": 1,
+                "phosphorus": 1,
+                "plasma": 1
+            },
+            "result": "napalm",
+            "type": "reagent"
+        },
+        {
+            "id": "napalm_goo",
+            "mix_phrase": "The mixture congeals into a sticky gel.",
+            "name": "Napalm",
+            "required_reagents": {
+                "ethanol": 1,
+                "fuel": 1,
+                "sugar": 1
+            },
+            "result": "napalm_goo",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "smokepowder",
+            "mix_phrase": "The mixture sets into a greyish powder!",
+            "name": "Smoke Powder",
+            "required_reagents": {
+                "phosphorus": 1,
+                "potassium": 1,
+                "stabiliser": 1,
+                "sugar": 1
+            },
+            "result": "smokepowder",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "consume_all": 1,
+            "id": "smoke",
+            "inhibitors": "list(\"stabiliser\")",
+            "instant": 1,
+            "mix_phrase": "The mixture quickly turns into a pall of smoke!",
+            "name": "Smoke",
+            "required_reagents": {
+                "phosphorus": 1,
+                "potassium": 1,
+                "sugar": 1
+            },
+            "special_log_handling": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "blackpowder",
+            "mix_phrase": "The mixture yields a granular black powder.",
+            "mix_sound": "sound\/misc\/fuse.ogg",
+            "name": "Black Powder",
+            "required_reagents": {
+                "charcoal": 1,
+                "saltpetre": 1,
+                "sulfur": 1
+            },
+            "result": "blackpowder",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "stabiliser",
+            "mix_phrase": "The mixture becomes a yellow liquid!",
+            "name": "Stabilising Agent",
+            "required_reagents": {
+                "hydrogen": 1,
+                "iron": 1,
+                "oxygen": 1
+            },
+            "result": "stabiliser",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "potash1",
+            "mix_phrase": "A white crystalline residue forms as the water boils off.",
+            "name": "potash",
+            "required_reagents": {
+                "ash": 1,
+                "water": 1
+            },
+            "required_temperature": 281,
+            "result": "potash",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "potash2",
+            "mix_phrase": "The mixture yields a white crystalline compound.",
+            "name": "potash",
+            "required_reagents": {
+                "acid": 1,
+                "chlorine": 1,
+                "potassium": 1
+            },
+            "result": "potash",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "saltpetre",
+            "mix_phrase": "A white crystalline substance condenses out of the mixture.",
+            "mix_sound": "sound\/misc\/fuse.ogg",
+            "name": "saltpetre",
+            "required_reagents": {
+                "poo": 1,
+                "potash": 1,
+                "urine": 1
+            },
+            "result": "saltpetre",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "jenkem",
+            "mix_phrase": "The mixture ferments into a filthy morass.",
+            "mix_sound": "sound\/effects\/blobattack.ogg",
+            "name": "Jenkem",
+            "required_reagents": {
+                "poo": 1,
+                "urine": 1
+            },
+            "result": "jenkem",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "weedkiller",
+            "mix_phrase": "The mixture gives off a harsh odor.",
+            "name": "Atrazine",
+            "required_reagents": {
+                "chlorine": 1,
+                "hydrogen": 1,
+                "nitrogen": 1
+            },
+            "result": "weedkiller",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "copper_nitrate",
+            "mix_phrase": "The mixture forms into a blue crystalline solid.",
+            "name": "Copper Nitrate",
+            "required_reagents": {
+                "copper": 1,
+                "nitrogen": 1,
+                "oxygen": 3
+            },
+            "result": "copper_nitrate",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "nitrogen_dioxide",
+            "mix_phrase": "The mixture gives off a biting odor.",
+            "name": "Nitrogen Dioxide",
+            "required_reagents": {
+                "copper_nitrate": 1
+            },
+            "required_temperature": 274,
+            "result": "nitrogen_dioxide",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "nitric_acid",
+            "mix_phrase": "The mixture gives off a sharp acidic tang.",
+            "name": "Nitric Acid",
+            "required_reagents": {
+                "nitrogen_dioxide": 3,
+                "water": 1
+            },
+            "result": "nitric_acid",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "allyl_chloride",
+            "mix_phrase": "The mixture becomes colorless.",
+            "name": "Allyl chloride",
+            "required_reagents": {
+                "chlorine": 2,
+                "oil": 1
+            },
+            "required_temperature": 278,
+            "result": "allyl_chloride",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "epichlorohydrin",
+            "mix_phrase": "The mixture gives of a garlic-like odor.",
+            "name": "Epichlorohydrin",
+            "required_reagents": {
+                "allyl_chloride": 1,
+                "clacid": 1,
+                "hydrogen": 1,
+                "oxygen": 2,
+                "sodium": 1
+            },
+            "result": "epichlorohydrin",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "glycerol",
+            "mix_phrase": "The mixture bubbles.",
+            "name": "Glycerol",
+            "required_reagents": {
+                "epichlorohydrin": 1,
+                "water": 1
+            },
+            "result": "glycerol",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "nitroglycerin",
+            "mix_phrase": "The mixture becomes seemingly heavy and viscous.",
+            "name": "Nitroglycerin",
+            "required_reagents": {
+                "acid": 1,
+                "glycerol": 1,
+                "nitric_acid": 1
+            },
+            "result": "nitroglycerin",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "foam surfactant",
+            "mix_phrase": "A head of foam results from the mixture\"s constant fizzing.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Foam surfactant",
+            "required_reagents": {
+                "acid": 1,
+                "carbon": 2,
+                "fluorine": 2
+            },
+            "result": "fluorosurfactant",
+            "result_amount": 5,
+            "type": "reagent"
+        },
+        {
+            "id": "ff-foam",
+            "mix_phrase": "The mixture bubbles gently.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Firefighting foam",
+            "required_reagents": {
+                "carbon": 1,
+                "chlorine": 1,
+                "sulfur": 1
+            },
+            "result": "ff-foam",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "foam",
+            "instant": 1,
+            "mix_phrase": "The mixture quickly and violently erupts into bubbles!",
+            "name": "Foam",
+            "required_reagents": {
+                "fluorosurfactant": 1,
+                "water": 1
+            },
+            "result_amount": 2,
+            "special_log_handling": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "metalfoam",
+            "instant": 1,
+            "mix_phrase": "The metal begins to foam up!",
+            "name": "Metal Foam",
+            "required_reagents": {
+                "acid": 1,
+                "aluminium": 3,
+                "fluorosurfactant": 1
+            },
+            "result_amount": 5,
+            "type": "reagent"
+        },
+        {
+            "id": "ironlfoam",
+            "instant": 1,
+            "mix_phrase": "The metal begins to foam up, becoming rigid and tough!",
+            "name": "Iron Foam",
+            "required_reagents": {
+                "acid": 1,
+                "fluorosurfactant": 1,
+                "iron": 3
+            },
+            "result_amount": 5,
+            "type": "reagent"
+        },
+        {
+            "id": "ammonia",
+            "mix_phrase": "The mixture bubbles, emitting an acrid reek.",
+            "name": "Ammonia",
+            "required_reagents": {
+                "hydrogen": 3,
+                "nitrogen": 1
+            },
+            "result": "ammonia",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "diethylamine",
+            "mix_phrase": "A horrible smell pours forth from the mixture.",
+            "name": "Diethylamine",
+            "required_reagents": {
+                "ammonia": 1,
+                "ethanol": 1
+            },
+            "required_temperature": 274,
+            "result": "diethylamine",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "LSD",
+            "mix_phrase": "The mixture turns a rather unassuming color and settles.",
+            "name": "Lysergic acid diethylamide",
+            "required_reagents": {
+                "diethylamine": 1,
+                "space_fungus": 1
+            },
+            "result": "LSD",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "name": "Bath Salts",
+            "id": "bathsalts",
+            "mix_phrase": "Tiny cubic crystals precipitate out of the mixture. Huh.",
+            "mix_sound": "sound\/misc\/fuse.ogg",
+            "required_reagents": {
+                "cleaner": 1,
+                "denatured_enzyme": 1,
+                "mercury": 1,
+                "msg": 1,
+                "mugwort": 1,
+                "saltpetre": 1,
+                "yuck": 1
+            },
+            "required_temperature": 274,
+            "result": "bathsalts",
+            "result_amount": 6,
+            "type": "reagent"
+        },
+        {
+            "id": "itching",
+            "mix_phrase": "The mixture congeals and dries up, leaving behind an abrasive powder.",
+            "mix_sound": "sound\/effects\/blobattack.ogg",
+            "name": "Itching Powder",
+            "required_reagents": {
+                "ammonia": 1,
+                "fuel": 1,
+                "space_fungus": 1
+            },
+            "result": "itching",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "diphenhydramine",
+            "mix_phrase": "The mixture fizzes gently.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Diphenhydramine",
+            "required_reagents": {
+                "bromine": 1,
+                "carbon": 1,
+                "diethylamine": 1,
+                "ethanol": 1,
+                "oil": 1
+            },
+            "result": "antihistamine",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "sulfonal",
+            "mix_phrase": "The mixture gives off quite a stench.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Sulfonal",
+            "required_reagents": {
+                "acetone": 1,
+                "diethylamine": 1,
+                "sulfur": 1
+            },
+            "result": "sulfonal",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "salt",
+            "mix_phrase": "The solution crystallizes with a brief flare of light.",
+            "name": "Salt",
+            "required_reagents": {
+                "chlorine": 1,
+                "sodium": 1,
+                "water": 1
+            },
+            "result": "salt",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "saline",
+            "name": "Saline-Glucose Solution",
+            "required_reagents": {
+                "salt": 1,
+                "sugar": 1,
+                "water": 1
+            },
+            "result": "saline",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "catdrugs",
+            "mix_phrase": "The mixture hisses oddly.",
+            "mix_sound": "sound\/effects\/cat_hiss.ogg",
+            "name": "Cat Drugs",
+            "required_reagents": {
+                "ammonia": 1,
+                "catonium": 1,
+                "fuel": 1,
+                "psilocybin": 1
+            },
+            "required_temperature": 274,
+            "result": "catdrugs",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "boilpee",
+            "mix_phrase": "The mixture bubbles and gives off a sharp odor.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Boiled Pee",
+            "required_reagents": {
+                "urine": 1,
+                "water": 1
+            },
+            "required_temperature": 281,
+            "result": "ammonia",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "crank",
+            "instant": 1,
+            "mix_phrase": "The mixture violently reacts, leaving behind a few crystalline shards.",
+            "mix_sound": "sound\/effects\/crystalshatter.ogg",
+            "name": "Crank",
+            "required_reagents": {
+                "acid": 1,
+                "ammonia": 1,
+                "antihistamine": 1,
+                "fuel": 1,
+                "lithium": 1
+            },
+            "required_temperature": 274,
+            "result": "crank",
+            "result_amount": 5,
+            "type": "reagent"
+        },
+        {
+            "id": "krokodil",
+            "mix_phrase": "The mixture dries into a pale blue powder.",
+            "mix_sound": "sound\/misc\/fuse.ogg",
+            "name": "Krokodil",
+            "required_reagents": {
+                "antihistamine": 1,
+                "cleaner": 1,
+                "fuel": 1,
+                "morphine": 1,
+                "phosphorus": 1,
+                "potassium": 1
+            },
+            "required_temperature": 274,
+            "result": "krokodil",
+            "result_amount": 5,
+            "type": "reagent"
+        },
+        {
+            "id": "cleaner",
+            "mix_phrase": "Ick, this stuff really stinks. Sure does make the container sparkle though!",
+            "name": "Space cleaner",
+            "required_reagents": {
+                "ammonia": 1,
+                "ethanol": 1,
+                "water": 1
+            },
+            "result": "cleaner",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "name": "Strange Reagent",
+            "id": "strange_reagent",
+            "mix_phrase": "The substance begins moving on its own somehow.",
+            "required_reagents": {
+                "mutagen": 1,
+                "omnizine": 1,
+                "water_holy": 1
+            },
+            "result": "strange_reagent",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "carpet",
+            "mix_phrase": "The substance turns thick and stiff, yet soft.",
+            "name": "Carpet",
+            "required_reagents": {
+                "blood": 1,
+                "space_fungus": 1
+            },
+            "result": "carpet",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "badgrease",
+            "mix_phrase": "The mixture emits a burnt, oily smell.",
+            "name": "Partially Hydrogenated Space-Soybean Oil",
+            "required_reagents": {
+                "grease": 1,
+                "hydrogen": 1
+            },
+            "required_temperature": 275,
+            "result": "badgrease",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "cornsyrup",
+            "mix_phrase": "The mixture forms a viscous, clear fluid!",
+            "name": "Corn Syrup",
+            "required_reagents": {
+                "acid": 1,
+                "cornstarch": 1
+            },
+            "required_temperature": 274,
+            "result": "cornsyrup",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "VHFCS",
+            "mix_phrase": "The mixture emits a sickly-sweet smell.",
+            "name": "Very-High-Fructose Corn Syrup",
+            "required_reagents": {
+                "cornsyrup": 1,
+                "denatured_enzyme": 0
+            },
+            "result": "VHFCS",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "gravy",
+            "mix_phrase": "The substance thickens and takes on a meaty odor.",
+            "name": "Gravy",
+            "required_reagents": {
+                "cornstarch": 1,
+                "milk": 1,
+                "porktonium": 1
+            },
+            "required_temperature": 274,
+            "result": "gravy",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "pepperoni",
+            "mix_phrase": "The beff and the synthflesh combine to form a smoky red log.",
+            "mix_sound": "sound\/effects\/blobattack.ogg",
+            "name": "Pepperoni",
+            "required_reagents": {
+                "beff": 1,
+                "saltpetre": 1,
+                "synthflesh": 1
+            },
+            "result": "pepperoni",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "acetone",
+            "mix_phrase": "The smell of paint thinner assaults you as the solution bubbles.",
+            "name": "Acetone",
+            "required_reagents": {
+                "fuel": 1,
+                "oil": 1,
+                "oxygen": 1
+            },
+            "result": "acetone",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "hairgrownium",
+            "mix_phrase": "The liquid becomes slightly hairy.",
+            "name": "Hairgrownium",
+            "required_reagents": {
+                "carpet": 1,
+                "ephedrine": 1,
+                "synthflesh": 1
+            },
+            "result": "hairgrownium",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "super_hairgrownium",
+            "mix_phrase": "The liquid becomes disgustingly furry and smells terrible.",
+            "name": "Super Hairgrownium",
+            "required_reagents": {
+                "hairgrownium": 1,
+                "iron": 1,
+                "methamphetamine": 1
+            },
+            "result": "super_hairgrownium",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "port",
+            "mix_phrase": "The liquid darkens and emits a strong smell of alcohol.",
+            "name": "Port",
+            "required_reagents": {
+                "iron": 1,
+                "sugar": 1,
+                "vodka": 1,
+                "wine": 1
+            },
+            "result": "port",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "capulettium",
+            "mix_phrase": "The smell of death wafts from the solution.",
+            "name": "Capulettium",
+            "required_reagents": {
+                "chlorine": 1,
+                "hydrogen": 1,
+                "neurotoxin": 1
+            },
+            "result": "capulettium",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "capulettium_plus",
+            "mix_phrase": "The solution begins to slosh about violently by itself.",
+            "name": "Capulettium Plus",
+            "required_reagents": {
+                "capulettium": 1,
+                "ephedrine": 1,
+                "methamphetamine": 1
+            },
+            "result": "capulettium_plus",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "something",
+            "mix_phrase": "The solution swirls violently and forms...something.",
+            "name": "Something",
+            "required_reagents": {
+                "ldmatter": 1,
+                "sorium": 1
+            },
+            "result": "something",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "voltagen",
+            "mix_phrase": "The solution settles into a liquid form of electricity.",
+            "mix_sound": "sound\/effects\/elec_bigzap.ogg",
+            "name": "Voltagen",
+            "required_reagents": {
+                "ldmatter": 1,
+                "oil": 1,
+                "plasma": 5,
+                "stabiliser": 1,
+                "uranium": 1
+            },
+            "result": "voltagen",
+            "result_amount": 5,
+            "type": "reagent"
+        },
+        {
+            "id": "energydrink",
+            "mix_phrase": "The solution emits a tutti frutti stench.",
+            "name": "Energy Drink",
+            "required_reagents": {
+                "coffee": 1,
+                "cola": 3,
+                "voltagen": 1
+            },
+            "result": "energydrink",
+            "result_amount": 5,
+            "type": "reagent"
+        },
+        {
+            "id": "voltagen_arc",
+            "inhibitors": "list(\"stabiliser\")",
+            "instant": 1,
+            "mix_phrase": "The solution settles into a liquid form of electricity but violently destabilizes!",
+            "mix_sound": "sound\/effects\/elec_bigzap.ogg",
+            "name": "Voltagen Arc",
+            "required_reagents": {
+                "ldmatter": 1,
+                "oil": 1,
+                "plasma": 5,
+                "uranium": 1
+            },
+            "type": "reagent"
+        },
+        {
+            "id": "fermid",
+            "instant": 1,
+            "mix_phrase": "The ants begin to rapidly mutate!",
+            "name": "Fermid",
+            "required_reagents": {
+                "ants": 1,
+                "aranesp": 1,
+                "booster_enzyme": 1,
+                "mutagen": 1
+            },
+            "type": "reagent",
+            "var\/static\/reaction_count": 0
+        },
+        {
+            "id": "life",
+            "mix_phrase": "The substance begins to wriggle disgustingly and climbs out of its container!",
+            "name": "Life",
+            "required_reagents": {
+                "blood": 2,
+                "strange_reagent": 1,
+                "synthflesh": 5
+            },
+            "required_temperature": 274,
+            "result": "life",
+            "result_amount": 8,
+            "type": "reagent",
+            "var\/static\/reaction_count": 0
+        },
+        {
+            "id": "werewolf_part1",
+            "mix_phrase": "The substance burbles distressingly and takes a metallic shine.",
+            "name": "Werewolf Serum Precursor Alpha",
+            "required_reagents": {
+                "denatured_enzyme": 0,
+                "grog": 1,
+                "super_hairgrownium": 1,
+                "wolfsbane": 1
+            },
+            "result": "werewolf_part1",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "werewolf_part2",
+            "mix_phrase": "The substance flashes brilliantly, but quickly subsides.",
+            "name": "Werewolf Serum Precursor Beta",
+            "required_reagents": {
+                "dna_mutagen": 1,
+                "omega_mutagen": 1,
+                "tongueofdog": 1
+            },
+            "result": "werewolf_part2",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "werewolf_part3",
+            "name": "Werewolf Serum Precursor Gamma",
+            "required_reagents": {
+                "werewolf_part1": 1,
+                "werewolf_part2": 1
+            },
+            "required_temperature": 274,
+            "result": "werewolf_part3",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "werewolf_part4",
+            "mix_phrase": "The substance gives off a putrid stench!",
+            "name": "Imperfect Werewolf Serum",
+            "required_reagents": {
+                "tea": 1,
+                "werewolf_part3": 1
+            },
+            "result": "lemonade",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "werewolf_serum",
+            "mix_phrase": "The substance bubbles and gives off an almost lupine howl.",
+            "name": "Werewolf Serum",
+            "required_reagents": {
+                "badgrease": 1,
+                "stabiliser": 1,
+                "werewolf_part4": 1
+            },
+            "result": "werewolf_serum",
+            "result_amount": 3,
+            "type": "reagent",
+            "var\/static\/list\/full_moon_days_2053": "list(\"Jan 04\", \"Feb 03\", \"Mar 04\", \"Apr 03\", \"May 02\", \"Jun 01\", \"Jul 01\", \"Jul 30\", \"Aug 29\", \"Sep 27\", \"Oct 27\", \"Nov 25\", \"Dec 25\")"
+        },
+        {
+            "id": "vampire_serum",
+            "mix_phrase": "The substance gives off a coppery stink.",
+            "name": "Vampire Serum Omega",
+            "required_reagents": {
+                "bloodc": 1,
+                "water_holy": 1,
+                "werewolf_serum": 1
+            },
+            "result": " \"vampire_serum\"",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "colors",
+            "mix_phrase": "The substance flashes multiple colors and emits the smell of a pocket protector.",
+            "name": "colorful reagent",
+            "required_reagents": {
+                "cocktail_citrus": 1,
+                "cryoxadone": 1,
+                "plasma": 1,
+                "radium": 1,
+                "space_drugs": 1,
+                "stabiliser": 1
+            },
+            "result": "colors",
+            "result_amount": 6,
+            "type": "reagent"
+        },
+        {
+            "id": "fliptonium",
+            "mix_phrase": "The mixture swirls around excitedly!",
+            "name": "fliptonium",
+            "required_reagents": {
+                "chocolate": 1,
+                "ephedrine": 1,
+                "ldmatter": 1,
+                "sonic": 1
+            },
+            "result": "fliptonium",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "glowing_fliptonium",
+            "mix_phrase": "The mixture swirls around and begins to glow strangely!",
+            "name": "glowing fliptonium",
+            "required_reagents": {
+                "anima": 1,
+                "fliptonium": 1,
+                "space_drugs": 1,
+                "uranium": 1
+            },
+            "result": "glowing_fliptonium",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "diluted_fliptonium",
+            "mix_phrase": "The mixture swirls around in a kinda lackluster way. You feel pretty unimpressed.",
+            "name": "diluted fliptonium",
+            "required_reagents": {
+                "fliptonium": 1,
+                "water": 2
+            },
+            "result": "diluted_fliptonium",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "fartonium",
+            "mix_phrase": "The substance makes a little \"toot\" noise and starts to smell pretty bad.",
+            "mix_sound": "sound\/misc\/poo2.ogg",
+            "name": "fartonium",
+            "required_reagents": {
+                "egg": 1,
+                "fakecheese": 1,
+                "refried_beans": 1,
+                "yuck": 1
+            },
+            "result": "fartonium",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "flaptonium",
+            "instant": 1,
+            "mix_phrase": "\"The substance turns an airy sky-blue and foams up into a new shape.\" ",
+            "mix_sound": "sound\/misc\/burp.ogg",
+            "name": "flaptonium",
+            "required_reagents": {
+                "blood": 1,
+                "chickensoup": 1,
+                "colors": 1,
+                "egg": 1,
+                "strange_reagent": 1
+            },
+            "required_temperature": 274,
+            "result": "null ",
+            "type": "reagent",
+            "var\/static\/reaction_count": 0
+        },
+        {
+            "id": "glitter",
+            "mix_phrase": "The mixture becomes far more fabulous!",
+            "name": "glitter",
+            "required_reagents": {
+                "colors": 1,
+                "itching": 1,
+                "paper": 1,
+                "silver": 1
+            },
+            "result": "glitter",
+            "result_amount": 4,
+            "type": "reagent"
+        },
+        {
+            "id": "rotting",
+            "mix_phrase": "The substance gives off a terrible stench. Are those maggots?",
+            "name": "rotting",
+            "required_reagents": {
+                "denatured_enzyme": 1,
+                "something": 1,
+                "yuck": 1
+            },
+            "result": "rotting",
+            "result_amount": 3,
+            "type": "reagent"
+        },
+        {
+            "id": "love",
+            "mix_phrase": "The substance gives off a lovely scent!",
+            "name": "pure love",
+            "required_reagents": {
+                "chocolate": 1,
+                "hugs": 1
+            },
+            "result": "love",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "big_bang_precursor",
+            "mix_phrase": "The solution settles and congeals into a strange viscous fluid that seems to have the properties of both a liquid and a gas.",
+            "name": "stable bose-einstein macro-condensate",
+            "required_reagents": {
+                "ldmatter": 1,
+                "something": 3,
+                "voltagen": 1
+            },
+            "required_temperature": -4,
+            "result": "big_bang_precursor",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "big_bang",
+            "mix_phrase": "A tiny point of light blooms within the material, and quickly grows to envelop the entire container. Your life flashes before your eyes.",
+            "name": "quark-gluon plasma",
+            "required_reagents": {
+                "big_bang_precursor": 1
+            },
+            "required_temperature": 279,
+            "result": "big_bang",
+            "result_amount": 50,
+            "type": "reagent"
+        },
+        {
+            "id": "nitrotri_explosion",
+            "mix_phrase": "null",
+            "mix_sound": "null",
+            "name": "NI3 Explosion",
+            "required_reagents": {
+                "nitrotri_dry": 1
+            },
+            "result": "nitrotri_parent",
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "madness_toxin",
+            "mix_phrase": "The mixture forms a clear greenish liquid, emitting a nauseating smell reminiscent of chlorophyll and rubbing alcohol.",
+            "mix_sound": "sound\/misc\/drinkfizz.ogg",
+            "name": "Rajaijah",
+            "required_reagents": {
+                "curare": 1,
+                "haloperidol": 1,
+                "mercury": 1,
+                "methamphetamine": 1,
+                "plasma": 1,
+                "prions": 1,
+                "sarin": 1,
+                "sulfonal": 1
+            },
+            "result": "madness_toxin",
+            "result_amount": 6,
+            "type": "reagent"
+        },
+        {
+            "id": "spiders",
+            "mix_phrase": "The ants arachnify. What?",
+            "name": "spiders",
+            "required_reagents": {
+                "ants": 1,
+                "hugs": 1
+            },
+            "result": "spiders",
+            "result_amount": 2,
+            "type": "reagent"
+        },
+        {
+            "id": "thalmerite_heat",
+            "instant": 0,
+            "mix_phrase": "The mixture starts to rapidly fizzle and heat up.",
+            "name": "thalmerite heating",
+            "reaction_speed": 1,
+            "reaction_temp_divider": 25,
+            "required_reagents": {
+                "oxygen": 1,
+                "thalmerite": 1
+            },
+            "result_amount": 1,
+            "type": "reagent"
+        },
+        {
+            "id": "cryostylane_cold",
+            "instant": 0,
+            "mix_phrase": "The mixture begins to rapidly freeze.",
+            "name": "cryostylane chilling",
+            "reaction_speed": 1,
+            "reaction_temp_divider": 15,
+            "required_reagents": {
+                "cryostylane": 1,
+                "oxygen": 1
+            },
+            "result_amount": 1,
+            "type": "reagent"
+        }
+    ],
+    "type": "goonstation-d8a2d60"
+}

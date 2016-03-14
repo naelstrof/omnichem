@@ -1,0 +1,14 @@
+extends layout
+
+block body
+    .row
+        .col-md-12.text-center= reagents[id].name
+    .row
+        - int a = cast(int)reagents[id].required_reagents.length;
+        - if ( a > 12 )
+            .col-md-12 CANNOT DISPLAY
+        - else
+            - a = 12 / a;
+            - foreach( r ; reagents[id].required_reagents.keys )
+                |!= `<div class="col-md-` ~ a.to!string ~ ` text-center">` ~ r ~ `</div>`
+block after

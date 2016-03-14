@@ -1,0 +1,27 @@
+.brand {
+    height: 42px;
+    padding-top: 10px;
+}
+
+.search {
+    height: 42px;
+    padding-top: 15px;
+}
+
+.brand-image {
+    background: url(../images/mixer.gif) left top;
+    width: 32px;
+    height: 32px;
+    margin-top: 5px;
+    display: block;
+    float: left;
+}
+
+.brand-text {
+    background: url(../images/brand.png);
+    width: 297px;
+    height: 42px;
+    margin-bottom: 10px;
+    display: block;
+    float: left;
+}
