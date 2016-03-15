@@ -1,10 +1,10 @@
 var redraw, g, renderer;
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
+    var letters = '0123456789ABC'.split('');
     var color = '#';
     for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 16)];
+        color += letters[Math.floor(Math.random() * 13)];
     }
     return color;
 }
@@ -26,7 +26,11 @@ $(document).ready(function() {
         var strings = $(this).text().split(",");
         g.addNode( strings[1], { color : getRandomColor(), render : render } );
         g.addNode( strings[0], { color : getRandomColor(), render : render } );
-        g.addEdge( strings[1], strings[0], { directed: true } );
+        if ( $(this).attr("weight") != "1" ) {
+            g.addEdge( strings[1], strings[0], { directed: true, label: $(this).attr("weight") } );
+        } else {
+            g.addEdge( strings[1], strings[0], { directed: true } );
+        }
     } );
     for(e in g.edges) {
         g.edges[e].style.stroke = g.edges[e].source.color;

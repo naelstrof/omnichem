@@ -99,7 +99,7 @@ class ChemAPI : IChemAPI {
             if( !reagents.keys.canFind(str) ) {
                 html ~= `<edge hidden>"`~ top.name ~ `","` ~ str ~ `"</edge>`;
             } else {
-                html ~= `<edge hidden>"`~ top.name ~ `","` ~ reagents[str].name ~ `"</edge>`;
+                html ~= `<edge result="` ~ top.result_amount.to!string ~ `" weight="` ~ top.required_reagents[str].to!string ~ `" hidden>"`~ top.name ~ `","` ~ reagents[str].name ~ `"</edge>`;
 				html ~= generateEdges( reagents[str] );
             }
         }
