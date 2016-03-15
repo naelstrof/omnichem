@@ -3,6 +3,19 @@
     padding-top: 10px;
 }
 
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+.content {
+    height: calc(100% - 90px );
+}
+
 .search {
     height: 42px;
     padding-top: 15px;

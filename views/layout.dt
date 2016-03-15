@@ -12,13 +12,15 @@ html
     body
         .container
             .row
-                .brand.col-md-6.col-xs-12
-                    .brand-image
-                    .brand-text
+                a(href="/")
+                    .brand.col-md-6.col-xs-12
+                        .brand-image
+                        .brand-text
                 .input-group.search.col-md-6.col-xs-12
                     input#search(type="text", placeholder="Search...").form-control
             hr
-            block body
+            #content.content
+                block body
     - js( "boostrap.min" );
-    - js( "jquery.min" );
+    - js( "jquery-1.4.2.min" );
     block after

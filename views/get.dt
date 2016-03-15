@@ -1,14 +1,12 @@
 extends layout
 
 block body
-    .row
-        .col-md-12.text-center= reagents[id].name
-    .row
-        - int a = cast(int)reagents[id].required_reagents.length;
-        - if ( a > 12 )
-            .col-md-12 CANNOT DISPLAY
-        - else
-            - a = 12 / a;
-            - foreach( r ; reagents[id].required_reagents.keys )
-                |!= `<div class="col-md-` ~ a.to!string ~ ` text-center">` ~ r ~ `</div>`
+    |!= html
+    #canvas
+
 block after
+    - js( "raphael-min" );
+    - js( "dracula_graffle" );
+    - js( "dracula_graph" );
+    - js( "dracula_algorithms" );
+    - js( "get" );
