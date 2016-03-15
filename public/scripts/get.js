@@ -36,8 +36,8 @@ $(document).ready(function() {
     renderer = new Graph.Renderer.Raphael('canvas', g, $("#content").width(), $("#content").height() );
     redraw = function() {
         layouter.layout();
-        renderer.width = $("#content").width();
-        renderer.height = $("#content").height() | 400;
+        renderer.width = $("#content").width()
+        renderer.height = $("#content").height()
         renderer.draw();
     };
     $(window).resize( redraw );

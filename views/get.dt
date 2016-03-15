@@ -2,7 +2,7 @@ extends layout
 
 block body
     |!= html
-    #canvas
+    #canvas.canvas
 
 block after
     - js( "raphael-min" );
