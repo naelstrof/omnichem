@@ -100,8 +100,8 @@ class ChemAPI : IChemAPI {
                 html ~= `<edge hidden>"`~ top.name ~ `","` ~ str ~ `"</edge>`;
             } else {
                 html ~= `<edge hidden>"`~ top.name ~ `","` ~ reagents[str].name ~ `"</edge>`;
+				html ~= generateEdges( reagents[str] );
             }
-            html ~= generateEdges( reagents[str] );
         }
         return html;
     }

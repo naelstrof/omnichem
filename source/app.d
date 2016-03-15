@@ -1,6 +1,6 @@
 import vibe.d;
 import chemAPI;
-import std.json;
+import std.stdio;
 
 shared static this()
 {
@@ -11,5 +11,6 @@ shared static this()
     auto settings = new HTTPServerSettings;
     settings.port = 8080;
 
+	writeln( "OMNICHEM is now running, open http://localhost:8080 in a browser!" );
     listenHTTP( settings, router );
 }
