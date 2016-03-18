@@ -5,7 +5,7 @@ import std.stdio;
 shared static this()
 {
     auto router = new URLRouter;
-    router.registerWebInterface(new ChemAPI("recipes.json"));
+    router.registerWebInterface(new ChemAPI("database.json"));
     router.get( "*", serveStaticFiles("public/") );
 
     auto settings = new HTTPServerSettings;
