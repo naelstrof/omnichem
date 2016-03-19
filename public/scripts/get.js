@@ -20,8 +20,10 @@ $(document).ready(function() {
         shape = r.set().
             push(ellipse).
             push(r.text(0, 30, node.label || node.id));
+        shape.translate( $("#content").width()/2, 300 );
         return shape;
     }
+    $('.beaker-image').css( "background-color", $('color').text() );
     $('edge').each( function( index ) {
         var strings = $(this).text().split(",");
         if ( $(this).attr("color_d") == "#333" ) {
@@ -29,15 +31,17 @@ $(document).ready(function() {
         } else {
             g.addNode( strings[1], { color : $(this).attr("color_d"), render : render } );
         }
-        if ( $(this).attr("color_s") == "#333" ) {
-            g.addNode( strings[0], { color : getRandomColor(), render : render } );
-        } else {
-            g.addNode( strings[0], { color : $(this).attr("color_s"), render : render } );
-        }
-        if ( $(this).attr("weight") != "1" ) {
-            g.addEdge( strings[1], strings[0], { directed: true, label: $(this).attr("weight") } );
-        } else {
-            g.addEdge( strings[1], strings[0], { directed: true } );
+        if ( strings[0] != strings[1] ) {
+            if ( $(this).attr("color_s") == "#333" ) {
+                g.addNode( strings[0], { color : getRandomColor(), render : render } );
+            } else {
+                g.addNode( strings[0], { color : $(this).attr("color_s"), render : render } );
+            }
+            if ( $(this).attr("weight") != "1" ) {
+                g.addEdge( strings[1], strings[0], { directed: true, label: $(this).attr("weight") } );
+            } else {
+                g.addEdge( strings[1], strings[0], { directed: true } );
+            }
         }
     } );
     for(e in g.edges) {

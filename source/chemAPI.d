@@ -57,7 +57,13 @@ class ChemAPI : IChemAPI {
             }
             if ( reagents[id].object.keys.canFind( "parents" ) ) {
                 foreach( j ; reagents[id]["parents"].array ) {
-                    parents ~= `<a href="/reagent?id=` ~ reagents[j.str]["id"].str ~ `">` ~ reagents[j.str]["name"].str ~ `</a>`;
+                    string rname;
+                    if ( reagents[j.str].object.keys.canFind("name") ) {
+                        rname = reagents[j.str]["name"].str;
+                    } else {
+                        rname = reagents[j.str]["id"].str;
+                    }
+                    parents ~= `<a href="/reagent?id=` ~ reagents[j.str]["id"].str ~ `">` ~ rname ~ `</a>`;
                 }
             }
             if ( parents.length <= 0 ) {
@@ -65,7 +71,13 @@ class ChemAPI : IChemAPI {
             }
             if ( reagents[id].object.keys.canFind( "required_reagents" ) ) {
                 foreach( j ; reagents[id]["required_reagents"].object.keys ) {
-                    children ~= `<a href="/reagent?id=` ~ reagents[j]["id"].str ~ `">` ~ reagents[j]["name"].str ~ `</a>`;
+                    string rname;
+                    if ( reagents[j].object.keys.canFind("name") ) {
+                        rname = reagents[j]["name"].str;
+                    } else {
+                        rname = reagents[j]["id"].str;
+                    }
+                    children ~= `<a href="/reagent?id=` ~ reagents[j]["id"].str ~ `">` ~ rname ~ `</a>`;
                 }
             }
             if ( children.length <= 0 ) {
@@ -84,7 +96,7 @@ class ChemAPI : IChemAPI {
             children = ["Unknown"];
             color = "#FFF";
         }
-        render!("get.dt", html, name, description, parents, children );
+        render!("get.dt", html, name, description, parents, children, color );
     }
     void index() {
         render!("index.dt", sorted_reagents);

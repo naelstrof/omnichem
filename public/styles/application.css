@@ -38,6 +38,20 @@ svg {
     padding-top: 15px;
 }
 
+.beaker-image {
+    background: url(../images/beaker.png) left top;
+    display: block;
+    float: left;
+    margin-top: 5px;
+    width: 32px;
+    height: 32px;
+}
+
+.beaker-text {
+    display: block;
+    float: left;
+}
+
 .brand-image {
     background: url(../images/mixer.gif) left top;
     width: 32px;
