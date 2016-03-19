@@ -15,11 +15,14 @@ $(document).ready(function() {
         /* the default node drawing */
         var color = node.color;
         var ellipse = r.ellipse(0, 0, 30, 20).attr({fill: color, stroke: color, "stroke-width": 2});
+        var text = r.text( 0, 0, node.label || node.id ).attr({"font-size": "18px", "stroke": "#000"});
+        var texta = r.text( 0, 0, node.label || node.id ).attr({"font-size": "18px", "fill": "#FFF"});
         /* set DOM node ID */
         ellipse.node.id = node.label || node.id;
         shape = r.set().
             push(ellipse).
-            push(r.text(0, 30, node.label || node.id));
+            push(text).
+            push(texta);
         shape.translate( $("#content").width()/2, 300 );
         return shape;
     }
@@ -45,6 +48,7 @@ $(document).ready(function() {
         }
     } );
     for(e in g.edges) {
+        g.edges[e].style["font-size"] = "18px";
         g.edges[e].style.stroke = g.edges[e].source.color;
         g.edges[e].style.fill = g.edges[e].source.color;
     }
