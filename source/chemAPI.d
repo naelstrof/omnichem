@@ -37,7 +37,20 @@ class ChemAPI : IChemAPI {
             if ( reagents[str].object.keys.canFind( "fluid_r" ) ) {
                 color_d = format("#%02x%02x%02x", min(reagents[str]["fluid_r"].integer,255), min(reagents[str]["fluid_g"].integer,255), min(reagents[str]["fluid_b"].integer,255) );
             }
-            html ~= `<edge color_s="` ~ color_s ~ `" color_d="` ~ color_d ~ `" result="` ~ j["result_amount"].toString() ~ `" weight="` ~ j["required_reagents"][str].toString() ~ `" hidden>"`~ j["name"].str ~ `","` ~ reagents[str]["name"].str ~ `"</edge>`;
+            string rname;
+            if ( reagents[str].object.keys.canFind("name") ) {
+                rname = reagents[str]["name"].str;
+            } else {
+                rname = reagents[str]["id"].str;
+            }
+
+            string bname;
+            if ( j.object.keys.canFind("name") ) {
+                bname = j["name"].str;
+            } else {
+                bname = j["id"].str;
+            }
+            html ~= `<edge color_s="` ~ color_s ~ `" color_d="` ~ color_d ~ `" result="` ~ j["result_amount"].toString() ~ `" weight="` ~ j["required_reagents"][str].toString() ~ `" hidden>"`~ bname ~ `","` ~ rname ~ `"</edge>`;
             html ~= generateEdges( str );
         }
         return html;
@@ -51,6 +64,8 @@ class ChemAPI : IChemAPI {
         if ( reagents.object.keys.canFind( id ) ) {
             if ( reagents[id].object.keys.canFind( "name" ) ) {
                 name = reagents[id]["name"].str ~ " (" ~ id ~ ")";
+            } else {
+                name = id;
             }
             if ( reagents[id].object.keys.canFind( "description" ) ) {
                 description = reagents[id]["description"].str;
@@ -87,7 +102,13 @@ class ChemAPI : IChemAPI {
                 color = format("#%02x%02x%02x", min(reagents[id]["fluid_r"].integer,255), min(reagents[id]["fluid_g"].integer,255), min(reagents[id]["fluid_b"].integer,255) );
             }
             if ( html == "" ) {
-                html = `<edge color_s="` ~ color ~ `" color_d="` ~ color ~ `" result="1" weight="1" hidden>"`~ reagents[id]["name"].str ~ `","` ~ reagents[id]["name"].str ~ `"</edge>`;
+                string rname;
+                if ( reagents[id].object.keys.canFind("name") ) {
+                    rname = reagents[id]["name"].str;
+                } else {
+                    rname = reagents[id]["id"].str;
+                }
+                html = `<edge color_s="` ~ color ~ `" color_d="` ~ color ~ `" result="1" weight="1" hidden>"`~ rname ~ `","` ~ rname ~ `"</edge>`;
             }
         } else {
             name = "Unknown";
