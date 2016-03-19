@@ -4,6 +4,6 @@ block body
     table.table.table-hover.table-bordered
         - foreach( r ; sorted_reagents )
             tr
-                td!= `<a href="/reagent?id=` ~ r.id ~ `">` ~ r.name ~ `</a>`
+                td!= `<a href="/reagent?id=` ~ r.id ~ `">` ~ r.name ~ ` (` ~ r.id ~ `)</a>`
 block after
     - js( "filter" );

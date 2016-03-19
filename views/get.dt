@@ -1,8 +1,24 @@
 extends layout
 
 block body
-    |!= html
+    h1!= name
+    p!= description
+    hr
     #canvas.canvas
+    hr
+    h2 Children
+    table.table.table-hover.table-bordered.table-striped
+        tbody
+            - foreach( str ; children )
+                tr
+                    td!= str
+    h2 Parents
+    table.table.table-hover.table-bordered.table-striped
+        tbody
+            - foreach( str ; parents )
+                tr
+                    td!= str
+    |!= html
 
 block after
     - js( "raphael-min" );

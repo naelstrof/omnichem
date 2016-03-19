@@ -1,10 +1,10 @@
 var redraw, g, renderer;
 
 function getRandomColor() {
-    var letters = '0123456789ABC'.split('');
+    var letters = '3456789ABC'.split('');
     var color = '#';
     for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 13)];
+        color += letters[Math.floor(Math.random() * 9)];
     }
     return color;
 }
@@ -24,8 +24,16 @@ $(document).ready(function() {
     }
     $('edge').each( function( index ) {
         var strings = $(this).text().split(",");
-        g.addNode( strings[1], { color : getRandomColor(), render : render } );
-        g.addNode( strings[0], { color : getRandomColor(), render : render } );
+        if ( $(this).attr("color_d") == "#333" ) {
+            g.addNode( strings[1], { color : getRandomColor(), render : render } );
+        } else {
+            g.addNode( strings[1], { color : $(this).attr("color_d"), render : render } );
+        }
+        if ( $(this).attr("color_s") == "#333" ) {
+            g.addNode( strings[0], { color : getRandomColor(), render : render } );
+        } else {
+            g.addNode( strings[0], { color : $(this).attr("color_s"), render : render } );
+        }
         if ( $(this).attr("weight") != "1" ) {
             g.addEdge( strings[1], strings[0], { directed: true, label: $(this).attr("weight") } );
         } else {
@@ -37,11 +45,11 @@ $(document).ready(function() {
         g.edges[e].style.fill = g.edges[e].source.color;
     }
     var layouter = new Graph.Layout.Spring(g);
-    renderer = new Graph.Renderer.Raphael('canvas', g, $("#content").width(), $("#content").height() );
+    renderer = new Graph.Renderer.Raphael('canvas', g, $("#content").width(), 600 );
     redraw = function() {
         layouter.layout();
         renderer.width = $("#content").width()
-        renderer.height = $("#content").height()
+        renderer.height = 600
         renderer.draw();
     };
     $(window).resize( redraw );

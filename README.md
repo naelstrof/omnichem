@@ -6,7 +6,7 @@ A goonchem helper that creates and displays dependency graphs of specified chemi
 
 ### Linux
 
-* Requires dub package manager and dlang.
+* Requires dub package manager and a dlang compiler (like dmd).
 
 ``` sh
 git clone git@github.com:naelstrof/omnichem.git

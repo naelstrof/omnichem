@@ -1140,7 +1140,7 @@
     },
     "capulettium": {
         "class": "capulettium",
-        "description": "A rare drug that causes the user to appear dead for some time.\"",
+        "description": "A rare drug that causes the user to appear dead for some time.",
         "fluid_b": 110,
         "fluid_g": 145,
         "fluid_r": 100,
@@ -1163,7 +1163,7 @@
     },
     "capulettium_plus": {
         "class": "capulettium_plus",
-        "description": "A rare and expensive drug that causes the user to appear dead for some time while they retain consciousness and vision.\"",
+        "description": "A rare and expensive drug that causes the user to appear dead for some time while they retain consciousness and vision.",
         "fluid_b": 110,
         "fluid_g": 145,
         "fluid_r": 100,
@@ -1502,7 +1502,7 @@
     },
     "cleaner": {
         "class": "space_cleaner",
-        "description": "A compound used to clean things. It has a sharp, unpleasant odor.\"",
+        "description": "A compound used to clean things. It has a sharp, unpleasant odor.",
         "fluid_b": 220,
         "fluid_g": 220,
         "fluid_r": 110,
@@ -1685,7 +1685,7 @@
         "fluid_g": 195,
         "fluid_r": 125,
         "id": "coniine",
-        "name": "coniine\"",
+        "name": "coniine",
         "reagent_state": "LIQUID",
         "transparency": 80
     },
@@ -1806,7 +1806,7 @@
         "instant": 1,
         "mix_phrase": "The mixture violently reacts, leaving behind a few crystalline shards.",
         "mix_sound": "sound\/effects\/crystalshatter.ogg",
-        "name": "crank\"",
+        "name": "crank",
         "overdose": 20,
         "parents": [
             "initropidril"
@@ -2626,7 +2626,7 @@
         "fluid_r": 100,
         "id": "flaptonium",
         "instant": 1,
-        "mix_phrase": "The substance turns an airy sky-blue and foams up into a new shape.\"",
+        "mix_phrase": "The substance turns an airy sky-blue and foams up into a new shape.",
         "mix_sound": "sound\/misc\/burp.ogg",
         "name": "flaptonium",
         "required_reagents": {
@@ -3449,7 +3449,7 @@
         "fluid_g": 100,
         "fluid_r": 250,
         "id": "histamine",
-        "name": "histamine\"",
+        "name": "histamine",
         "overdose": 40,
         "parents": [
             "initropidril"
@@ -7438,7 +7438,7 @@
             "water_holy": 1,
             "werewolf_serum": 1
         },
-        "result": "\"vampire_serum",
+        "result": "vampire_serum",
         "result_amount": 3,
         "transparency": 255
     },
