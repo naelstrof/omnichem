@@ -50,7 +50,13 @@ class ChemAPI : IChemAPI {
             } else {
                 bname = j["id"].str;
             }
-            html ~= `<edge color_s="` ~ color_s ~ `" color_d="` ~ color_d ~ `" result="` ~ j["result_amount"].toString() ~ `" weight="` ~ j["required_reagents"][str].toString() ~ `" hidden>"`~ bname ~ `","` ~ rname ~ `"</edge>`;
+            string resulta;
+            if ( j.object.keys.canFind( "result_amount" ) ) {
+                resulta = j["result_amount"].toString();
+            } else {
+                resulta = "1";
+            }
+            html ~= `<edge color_s="` ~ color_s ~ `" color_d="` ~ color_d ~ `" result="` ~ resulta ~ `" weight="` ~ j["required_reagents"][str].toString() ~ `" hidden>"`~ bname ~ `","` ~ rname ~ `"</edge>`;
             html ~= generateEdges( str );
         }
         return html;
