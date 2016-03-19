@@ -15,8 +15,8 @@ $(document).ready(function() {
         /* the default node drawing */
         var color = node.color;
         var ellipse = r.ellipse(0, 0, 30, 20).attr({fill: color, stroke: color, "stroke-width": 2});
-        var text = r.text( 0, 0, node.label || node.id ).attr({"font-size": "18px", "stroke": "#000"});
-        var texta = r.text( 0, 0, node.label || node.id ).attr({"font-size": "18px", "fill": "#FFF"});
+        var text = r.text( 0, 0, node.label || node.id ).attr({"font-size": "18px", "stroke": "#FFF", "stroke-width" : 3});
+        var texta = r.text( 0, 0, node.label || node.id ).attr({"font-size": "18px", "fill": "#000"});
         /* set DOM node ID */
         ellipse.node.id = node.label || node.id;
         shape = r.set().
